@@ -1,0 +1,173 @@
+/* PostCard.module.css */
+
+/* Estilo general de la tarjeta */
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0.5rem; /* Reduce el margen alrededor de la tarjeta */
+    background-color: #fff;
+    width: 100%; /* Asegura que la tarjeta ocupe el ancho disponible */
+    max-width: 300px; /* Limita el ancho máximo de la tarjeta */
+  }
+  
+  /* Estilo del título */
+  .title {
+    font-size: 1.2rem; /* Reduce el tamaño de fuente del título */
+    text-align: center;
+    margin: 0.5rem 0; /* Reduce los márgenes superior e inferior */
+  }
+  
+  /* Estilo del autor y la fecha */
+  .author, .date {
+    font-size: 0.9rem; /* Reduce el tamaño de fuente */
+    text-align: center;
+    color: #666;
+    margin: 0.3rem 0; /* Reduce los márgenes */
+  }
+  
+  /* Contenido principal */
+  .body {
+    padding: 0.5rem; /* Reduce el padding dentro del cuerpo de la tarjeta */
+    background-color: #f8f9fa;
+  }
+  
+  /* Estilo de la descripción */
+  .description {
+    font-size: 1rem; /* Reduce el tamaño de fuente */
+    text-align: center;
+    margin: 0.3rem 0; /* Reduce los márgenes */
+  }
+  
+  /* Estilo del resumen */
+  .summary {
+    font-size: 0.9rem; /* Reduce el tamaño de fuente */
+    text-align: center;
+    color: #888;
+    margin: 0.3rem 0; /* Reduce los márgenes */
+  }
+  
+  /* Estilo de los botones */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem; /* Reduce el margen superior */
+  }
+  
+  /* Estilo general de los botones */
+  .button {
+    padding: 0.4rem 0.8rem; /* Reduce el padding */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem; /* Reduce el tamaño de fuente de los botones */
+  }
+  
+  /* Estilo de botones específicos */
+  .warning {
+    background-color: #ffc107;
+  }
+  
+  .danger {
+    background-color: #dc3545;
+  }
+  
+  .primary {
+    background-color: #007bff;
+  }
+  
+  /* Añade margen a los botones cuando están en una fila */
+  .primary + .warning {
+    margin-left: 0.5rem;
+  }
+  
+  /* Estilo para botones deshabilitados */
+  .button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  /* PostForm.module.css */
+
+.container {
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .heading {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .form {
+    margin-bottom: 2rem;
+  }
+  
+  .formGroup {
+    margin-bottom: 1rem;
+  }
+  
+  .formLabel {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .formControl {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .alertError {
+    color: #dc3545;
+    background-color: #f8d7da;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .alertSuccess {
+    color: #155724;
+    background-color: #d4edda;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .btnPrimary {
+    background-color: #007bff;
+  }
+  
+  .btnSecondary {
+    background-color: #6c757d;
+  }
+  
+  .btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .postsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .postCard {
+    flex: 1 1 calc(33.333% - 1rem); /* Tres columnas */
+    box-sizing: border-box;
+  }  

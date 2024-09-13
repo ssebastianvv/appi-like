@@ -11,7 +11,7 @@ const LoginForm = () => {
   const [message, setMessage] = useState('');
 
   const [error, setError] = useState<string | null>(null);
-  const router = useRouter(); // Hook para la redirección
+  const router = useRouter(); 
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -25,7 +25,6 @@ const LoginForm = () => {
       setMessage('Login successful');
       localStorage.setItem('token', token);
       console.log('User:', user);
-      // Redirige a la página de inicio después del inicio de sesión exitoso
       router.push('/user');
     } else {
       setError('Login failed: Invalid email or password');
